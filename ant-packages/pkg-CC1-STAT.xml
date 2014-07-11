@@ -11,7 +11,7 @@
    </types>
     <types>
       <members>Cust_SST_Partner_Connection</members>
-      <name>CustomLabels</name>
+      <name>CustomLabel</name>
    </types>
    <types>
       <members>Sample_Request_Order__c-Sample Request Order Layout</members>
