@@ -1,9 +1,10 @@
-global class touchSampleRecords implements Database.Batchable<sObject>{
+global class CUST_TouchSampleRecords implements Database.Batchable<sObject>{
     
     private String strQueryAllSamples;
 
-    global TouchRecords(String query) {
+    global CUST_TouchSampleRecords(String query) {
         this.strQueryAllSamples = query;
+        system.debug('>>>>> touchSampleRecords constructor: query = ' + query);
     }
 
     global Database.QueryLocator start(Database.BatchableContext BC){
@@ -11,14 +12,22 @@ global class touchSampleRecords implements Database.Batchable<sObject>{
     }
 
     global void execute(Database.BatchableContext BC, List<sObject> scope){
+        
+        system.debug('>>>>> touchSampleRecords.execute: size = ' + scope.size());
+        
+        //update all records in scope
+        // - we're simply forcing the trigger to fire here
+        // - note that no values are changing before the update is called
+
         update scope;
     }
 
     global void finish(Database.BatchableContext BC){
+        system.debug('>>>>> touchSampleRecords.finish: done.');
     }
 }
 
 //RUN
 //select count() from Sample_Request_Order__c; //38997 records @2014-07-10 551PM
-//Id batchInstanceId = Database.executeBatch(new touchSampleRecords('select id from Sample_Request_Order__c'));
+//Id batchInstanceId = Database.executeBatch(new CUST_TouchSampleRecords('select id from Sample_Request_Order__c'));
 
