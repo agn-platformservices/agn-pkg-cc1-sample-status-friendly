@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+   <types>
+      <members>Sampling_Status_Translation__c</members>
+      <name>CustomObject</name>
+   </types>
+   <types>
+      <members>Sample_Request_Order__c.Sampling_Status_Translation__c</members>
+      <members>Sample_Request_Order__c.Customer_Status__c</members>
+      <name>CustomField</name> 
+   </types>
+    <types>
+      <members>Cust_SST_Partner_Connection</members>
+      <name>CustomLabels</name>
+   </types>
+   <types>
+      <members>Sample_Request_Order__c-Sample Request Order Layout</members>
+      <name>Layout</name>
+   </types>z
+   <types>
+      <members>Base_Partner_Network</members>
+      <members>Base_Partner_Network_TEST</members>
+      <members>RUSH_SRO_DamageLoss_Ctrl</members>
+      <members>RUSH_SRO_CancelReason_Ctrl</members>
+      <members>CUST_SampleRequestOrder_Trigger_Helper</members>
+      <members>CUST_SampleRequestOrder_Partner_TEST</members>
+      <name>ApexClass</name>
+   </types>
+   <types>
+      <members>CUST_SST_Partner</members>
+      <members>CUST_SampleRequestOrder_Partner</members>
+      <name>ApexTrigger</name>
+   </types>
+   <types>
+      <members>RUSH_SRO_CancelReason</members>
+      <members>RUSH_SRO_DamageLoss</members>
+      <name>ApexPage</name>
+   </types>
+   <version>29.0</version>
+</Package>

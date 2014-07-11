@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+   <types>
+      <members>Sampling_Status_Translation__c</members>
+      <name>CustomObject</name>
+   </types>
+   <types>
+      <members>RUSH_SRO_AllocationManagement_ctrl</members>
+      <members>RUSH_MetaUtils</members>
+      <members>RUSH_SRO_InlineSRO_Ctrl</members>
+      <members>RUSH_SRO_AllSamples_HCP_Ctrl</members>
+      <members>RUSH_SRO_WSHelper</members>
+      <name>ApexClass</name>
+   </types>
+   <types>
+      <members>RUSH_SRO_AllSamples_HCP</members>
+      <members>RUSH_SRO_AllocationManagement</members>
+      <members>RUSH_SRO_InlineSRO</members>
+      <name>ApexPage</name>
+   </types>
+   <version>29.0</version>
+</Package>
