@@ -4,7 +4,7 @@ global class CUST_TouchSampleRecords implements Database.Batchable<sObject>{
 
     global CUST_TouchSampleRecords(String query) {
         this.strQueryAllSamples = query;
-        system.debug('>>>>> touchSampleRecords constructor: query = ' + query);
+        system.debug('>>>>> CUST_TouchSampleRecords constructor: query = ' + query);
     }
 
     global Database.QueryLocator start(Database.BatchableContext BC){
@@ -13,7 +13,7 @@ global class CUST_TouchSampleRecords implements Database.Batchable<sObject>{
 
     global void execute(Database.BatchableContext BC, List<sObject> scope){
         
-        system.debug('>>>>> touchSampleRecords.execute: size = ' + scope.size());
+        system.debug('>>>>> CUST_TouchSampleRecords.execute: size = ' + scope.size());
         
         //update all records in scope
         // - we're simply forcing the trigger to fire here
@@ -23,7 +23,7 @@ global class CUST_TouchSampleRecords implements Database.Batchable<sObject>{
     }
 
     global void finish(Database.BatchableContext BC){
-        system.debug('>>>>> touchSampleRecords.finish: done.');
+        system.debug('>>>>> CUST_TouchSampleRecords.finish: done.');
     }
 }
 
