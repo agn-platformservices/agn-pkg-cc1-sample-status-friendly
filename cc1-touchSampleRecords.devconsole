@@ -1,0 +1,24 @@
+global class touchSampleRecords implements Database.Batchable<sObject>{
+    
+    private String strQueryAllSamples;
+
+    global TouchRecords(String query) {
+        this.strQueryAllSamples = query;
+    }
+
+    global Database.QueryLocator start(Database.BatchableContext BC){
+        return Database.getQueryLocator(query);
+    }
+
+    global void execute(Database.BatchableContext BC, List<sObject> scope){
+        update scope;
+    }
+
+    global void finish(Database.BatchableContext BC){
+    }
+}
+
+//RUN
+//select count() from Sample_Request_Order__c; //38997 records @2014-07-10 551PM
+//Id batchInstanceId = Database.executeBatch(new touchSampleRecords('select id from Sample_Request_Order__c'));
+
