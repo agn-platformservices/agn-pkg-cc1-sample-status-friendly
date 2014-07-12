@@ -16,8 +16,8 @@ Deployment Plan:
 
 5. S2S: configure Salesforce-to-Salesforce connections for all 3 environments
 
-6. CC1: Update all SR's in order to fire trigger via [dev console snippet](dev-console/cc1-touchSampleRecords.devconsole)
+6. CC1: Update all SR's in order to fire trigger via [batch Apex](dev-console/cc1-touchSampleRecords.devconsole)
 
 7. CC1: Extract all SR records to csv file via Workbench
 
-8. Compare SR records in csv 1 to csv 7; Confirm absence of any changes other than Date Modified.
+8. Compare SR records in csv 1 to csv 7; Confirm no change to fields other than Customer_Status__c, Last Modified By
