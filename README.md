@@ -10,13 +10,13 @@ Deployment Plan:
 
 2. S2S: Enable for all orgs (if not already)
 
-3. CC1: deploy objects, classes, temporary batch job, etc. via [pkg-CC1-STAT.xml](ant-packages/pkg-CC1-STAT.xml)
+3. CC1/NA3/UM1: deploy new object via [pkg-NA3-STAT.xml](ant-packages/pkg-NA3-STAT.xml)
 
-4. UM1: deploy objects, classes, etc. via [pkg-UM1-STAT.xml](ant-packages/pkg-UM1-STAT.xml)
+4. S2S: configure Salesforce-to-Salesforce objects for all 3 environments
+ 
+5. CC1: deploy objects, classes, temporary batch job, etc. via [pkg-CC1-STAT.xml](ant-packages/pkg-CC1-STAT.xml)
 
-5. NA3: deploy object via [pkg-NA3-STAT.xml](ant-packages/pkg-NA3-STAT.xml)
-
-6. S2S: configure Salesforce-to-Salesforce objects for all 3 environments
+6. UM1: deploy objects, classes, etc. via [pkg-UM1-STAT.xml](ant-packages/pkg-UM1-STAT.xml)
 
 7. CC1: Update all SR's in order to fire trigger via [temporary local batch job](dev-console/cc1-touchSampleRecords.devconsole)
 
