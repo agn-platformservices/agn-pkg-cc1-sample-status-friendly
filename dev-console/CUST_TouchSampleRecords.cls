@@ -26,8 +26,3 @@ global class CUST_TouchSampleRecords implements Database.Batchable<sObject>{
         system.debug('>>>>> CUST_TouchSampleRecords.finish: done.');
     }
 }
-
-//RUN
-//select count() from Sample_Request_Order__c; //38997 records @2014-07-10 551PM
-//Id batchInstanceId = Database.executeBatch(new CUST_TouchSampleRecords('select id from Sample_Request_Order__c'));
-

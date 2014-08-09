@@ -16,14 +16,16 @@
    <types>
       <members>Sample_Request_Order__c-Sample Request Order Layout</members>
       <name>Layout</name>
-   </types>z
+   </types>
    <types>
+      <members>Base_Test_Util</members>
       <members>Base_Partner_Network</members>
       <members>Base_Partner_Network_TEST</members>
       <members>RUSH_SRO_DamageLoss_Ctrl</members>
       <members>RUSH_SRO_CancelReason_Ctrl</members>
       <members>CUST_SampleRequestOrder_Trigger_Helper</members>
       <members>CUST_SampleRequestOrder_Partner_TEST</members>
+      <members>CUST_TouchSampleRecords</members>
       <name>ApexClass</name>
    </types>
    <types>
