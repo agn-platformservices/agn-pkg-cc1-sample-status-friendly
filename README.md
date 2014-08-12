@@ -24,6 +24,6 @@ Deployment Plan:
 
 - [ ] 9. CC1: Extract all SR records to csv file via Workbench
 
-- [ ] 10. Compare SR records in csv 1 to csv 8; Confirm no change to fields other than Customer_Status__c, Last Modified By
+- [ ] 10. Compare SR records in csv 5 to csv 9; Confirm no change to fields other than Customer_Status__c, Last Modified By
 
 - [ ] 11. Delete [temporary local batch job](dev-console/CUST_TouchSampleRecords.cls) from CC1
