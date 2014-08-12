@@ -24,4 +24,4 @@ Deployment Plan:
 
 - [ ] 9. Compare SR records in csv 1 to csv 8; Confirm no change to fields other than Customer_Status__c, Last Modified By
 
-- [ ] 10. Delete [temporary local batch job](dev-console/cc1-touchSampleRecords.devconsole) from CC1
+- [ ] 10. Delete [temporary local batch job](dev-console/CUST_TouchSampleRecords.cls) from CC1
