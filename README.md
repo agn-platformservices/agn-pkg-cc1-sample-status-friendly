@@ -6,14 +6,14 @@ CC1 SR Status change in support of CEP
 
 Deployment Plan:
 
-1. CC1: Extract all SR records to csv file via Workbench (40k)
+1. CC1: deploy new object via [pkg-CC1-PRELIM.xml](ant-packages/pkg-CC1-PRELIM.xml)
 
-2. S2S: Enable for all orgs (if not already)
+2. UM1: deploy new object via [pkg-UM1-PRELIM.xml](ant-packages/pkg-UM1-PRELIM.xml)
 
-3. CC1/NA3/UM1: deploy new object via [pkg-NA3-STAT.xml](ant-packages/pkg-NA3-STAT.xml)
+3. S2S: configure Salesforce-to-Salesforce objects for all 3 environments
 
-4. S2S: configure Salesforce-to-Salesforce objects for all 3 environments
- 
+4. CC1: Extract all SR records to csv file via Workbench (40k)
+
 5. CC1: deploy objects, classes, temporary batch job, etc. via [pkg-CC1-STAT.xml](ant-packages/pkg-CC1-STAT.xml)
 
 6. UM1: deploy objects, classes, etc. via [pkg-UM1-STAT.xml](ant-packages/pkg-UM1-STAT.xml)
