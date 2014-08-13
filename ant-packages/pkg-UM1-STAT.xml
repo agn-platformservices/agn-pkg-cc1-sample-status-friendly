@@ -18,5 +18,20 @@
       <members>RUSH_SRO_InlineSRO</members>
       <name>ApexPage</name>
    </types>
+   <types>
+      <members>RUSH_SRO_AS_ShipTo_NoTerritoryInformation</members>
+      <members>RUSH_SRO_DeliveryMethodRequired</members>
+      <members>RUSH_SRO_NoTerritoryInformation</members>
+      <members>RUSH_SRO_NoOrderSelectedResend</members>
+      <members>RUSH_SRO_NoOrderSelectedCancel</members>
+      <members>RUSH_SRO_ISRO_NoTerritoryInformation</members>
+      <members>RUSH_SRO_EmailRequired</members>
+      <members>RUSH_SRO_AllSamples_NoTerritoryInformation</members>
+      <members>RUSH_SRO_CreatedSuccessfully</members>
+      <members>RUSH_SRO_FaxRequired</members>
+      <members>RUSH_SRO_AllSamples_NoOrderSelectedResend</members>
+      <members>RUSH_SRO_AllSamples_NoOrderSelectedCancel</members>
+      <name>CustomLabel</name>
+   </types>
    <version>29.0</version>
 </Package>
