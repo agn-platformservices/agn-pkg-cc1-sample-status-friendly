@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+   <types>
+      <members>RUSH_SRO_AllSamples_ShipTo_Ctrl</members>
+      <name>ApexClass</name>
+   </types>
+   <types>
+      <members>RUSH_SRO_AllSamples_ShipTo</members>
+      <name>ApexPage</name>
+   </types>
+   <types>
+      <members>RUSH_SRO_AS_ShipTo_NoOrderResend</members>
+      <members>RUSH_SRO_AS_ShipTo_NoOrderCancel</members>
+      <members>RUSH_SRO_AS_ShipTo_CreatedSuccessfully</members>
+      <members>RUSH_SRO_AS_Shipto_NoSiperianID</members>
+      <name>CustomLabel</name>
+   </types>
+   <version>29.0</version>
+</Package>
